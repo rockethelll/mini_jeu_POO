@@ -29,7 +29,7 @@ while user.life_points.positive? && (player1.life_points.positive? || player2.li
   puts 's : chercher à se soigner', ''
   puts 'attaquer un joueur :'
   puts "0 : #{player1.name} a #{player1.life_points} points de vie."
-  puts "1 : #{player2.name} a #{player2.life_points} points de vie.",''
+  puts "1 : #{player2.name} a #{player2.life_points} points de vie.", ''
   choice = gets.chomp
   case choice
   when 'a'
@@ -41,7 +41,7 @@ while user.life_points.positive? && (player1.life_points.positive? || player2.li
   when '1'
     user.attacks(player2)
   end
-  turn +=1
+  turn += 1
   puts 'Les autres joueurs ripostent'
   enemies.each do |enemy|
     enemy.attacks(user) if enemy.life_points.positive?
