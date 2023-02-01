@@ -10,9 +10,6 @@ require_relative 'lib/human_player'
 my_game = Game.new('Alec')
 my_game.menu_choice(my_game.menu)
 
-binding.pry
-
-
 # while user.life_points.positive? && (player1.life_points.positive? || player2.life_points.positive?)
 #   choice = gets.chomp
 #   case choice
